@@ -8,6 +8,7 @@ import About from './components/about/about.jsx';
 import Projects from './components/projet/projet.jsx';
 import Contact from './components/contact/contact.jsx';
 import Services from './components/service/service.jsx';
+import Mention from './components/mention/MentionsLegales.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -18,5 +19,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <Services />
     <Contact />
     <Footer />
+    <Mention />
   </React.StrictMode>,
 )
