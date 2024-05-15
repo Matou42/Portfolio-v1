@@ -37,7 +37,7 @@
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    color: #333;
+    color: #fff;
     width: calc(100% - 22px); /* Réduire la largeur pour compenser la bordure */
   }
   
