@@ -1,74 +1,74 @@
 /* contact.css */
 
 #contact {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #343a40;
-  }
-  
-  #contact h2 {
-    margin-top: 0;
-    margin-bottom: 20px;
-    color: #fff;
-  }
-  
-  #contact p {
-    color: #fff;
-    margin-bottom: 20px;
-  }
-  
-  .form-group {
-    margin-bottom: 20px;
-  }
-  
-  .form-group label {
-    font-weight: bold;
-    margin-bottom: 5px;
-    color: #fff;
-  }
-  
-  .form-group input[type="text"],
-  .form-group input[type="email"],
-  .form-group textarea {
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    color: #fff;
-    width: calc(100% - 22px); /* Réduire la largeur pour compenser la bordure */
-  }
-  
-  .form-group input[type="text"]:focus,
-  .form-group input[type="email"]:focus,
-  .form-group textarea:focus {
-    outline: none;
-    border-color: #007bff;
-  }
-  
-  .form-group textarea {
-    height: 100px;
-  }
-  
-  .error {
-    color: #dc3545;
-    font-size: 14px;
-    margin-top: 5px;
-  }
-  
-  button[type="submit"] {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  button[type="submit"]:hover {
-    background-color: #0056b3;
-  }
-  
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 2px solid #007bff; /* Blue border */
+  border-radius: 10px;
+  background-color: #242424; /* Dark background color */
+  color: #fff; /* White text color */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+#contact h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #007bff; /* Blue title color */
+}
+
+#contact p {
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #333; /* Dark text color */
+  background-color: #fff; /* White background */
+  width: calc(100% - 22px);
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #007bff; /* Blue border color on focus */
+}
+
+.form-group textarea {
+  height: 100px;
+}
+
+.error {
+  color: #dc3545; /* Red error message color */
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #007bff; /* Blue button background color */
+  color: #fff; /* White text color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3; /* Darker blue button color on hover */
+}

@@ -54,7 +54,7 @@ function MentionsLegales() {
                     Lorsque vous utilisez ce site, nous pouvons collecter les informations suivantes :
                 </p>
                 <ul style={styles.list}>
-                    <li>Informations d&eacute;identification personnelle telles que votre nom, votre adresse e-mail, votre numéro de téléphone, etc.</li>
+                    <li>Informations d&rsquo;;identification personnelle telles que votre nom, votre adresse e-mail, votre numéro de téléphone, etc.</li>
                     <li>Informations de connexion, y compris les adresses IP, les données de connexion, le type et la version du navigateur, etc.</li>
                     <li>Informations sur votre utilisation de notre service, telles que les pages visitées, les fonctionnalités utilisées, etc.</li>
                     <li>Informations fournies volontairement par vous, telles que les commentaires, les rétroactions, etc.</li>
@@ -81,26 +81,25 @@ function MentionsLegales() {
 
     const conditionsUtilisation = (
         <div style={styles.container}>
-            <h2 style={styles.heading}>Conditions d&eacute;Utilisation</h2>
-    
+            <h2 style={styles.heading}>Conditions d&rsquo;Utilisation</h2>
             <div style={styles.section}>
                 <h3 style={styles.subHeading}>Sur ce site</h3>
                 <p style={styles.paragraph}>
-                    En accédant à ce site, vous acceptez d&eacute;être lié par ces Conditions d&eacute;Utilisation, toutes les lois et réglementations applicables, et acceptez que vous êtes responsable du respect des lois locales applicables. Si vous n&eacute;êtes pas d&eacute;accord avec l&eacute;une de ces conditions, il vous est interdit d&eacute;utiliser ou d&eacute;accéder à ce site. Les matériaux contenus dans ce site web sont protégés par les lois applicables en matière de droit d&eacute;auteur et de marques commerciales.
+                    En accédant à ce site, vous acceptez d&lsquo;être lié par ces Conditions d&rsquo;;Utilisation, toutes les lois et réglementations applicables, et acceptez que vous êtes responsable du respect des lois locales applicables. Si vous n&rsquo;;êtes pas d&rsquo;;accord avec l&rsquo;;une de ces conditions, il vous est interdit d&rsquo;;utiliser ou d&rsquo;;accéder à ce site. Les matériaux contenus dans ce site web sont protégés par les lois applicables en matière de droit d&rsquo;auteur et de marques commerciales.
                 </p>
             </div>
     
             <div style={styles.section}>
                 <h3 style={styles.subHeading}>Utilisation de la licence</h3>
                 <p style={styles.paragraph}>
-                    Il s&eacute;agit de l&eacute;octroi d&eacute;une licence, non d&eacute;un transfert de titre, et en vertu de cette licence, vous ne pouvez pas :
+                    Il s&rsquo;;agit de l&rsquo;octroi d&rsquo;;une licence, non d&rsquo;;un transfert de titre, et en vertu de cette licence, vous ne pouvez pas :
                 </p>
                 <ul style={styles.list}>
                     <li>Modifier ou copier les documents.</li>
                     <li>Utiliser les documents à des fins commerciales ou pour toute exposition publique (commerciale ou non commerciale).</li>
-                    <li>Tenter de décompiler ou d&eacute;appliquer une rétro-ingénierie sur tout logiciel contenu sur ce site.</li>
-                    <li>Supprimer les mentions de droits d&eacute;auteur ou autres mentions de propriété des documents.</li>
-                    <li>Transférer les documents à une autre personne ou &eacute;refléter&eacute; les documents sur un autre serveur.</li>
+                    <li>Tenter de décompiler ou d&rsquo;;appliquer une rétro-ingénierie sur tout logiciel contenu sur ce site.</li>
+                    <li>Supprimer les mentions de droits d&rsquo;auteur ou autres mentions de propriété des documents.</li>
+                    <li>Transférer les documents à une autre personne ou &rsquo;;refléter&rsquo;; les documents sur un autre serveur.</li>
                 </ul>
             </div>
     
@@ -115,11 +114,11 @@ function MentionsLegales() {
         <div className="mentions-legales-container" style={styles.container}>
             <h1 className="mentions-legales-title" style={styles.heading}>Mentions Légales</h1>
 
-            <h2 style={styles.heading}>Droits d&eacute;auteur :</h2>
+            <h2 style={styles.heading}>Droits d&rsquo;auteur :</h2>
             <p style={styles.paragraph}>© {annee} {nom}. Tous droits réservés.</p>
 
             <h2 style={styles.heading}>Politique de confidentialité :</h2>
-            <p style={styles.paragraph}>Informations sur la collecte et l&eacute;utilisation des données personnelles :</p>
+            <p style={styles.paragraph}>Informations sur la collecte et l&rsquo;;utilisation des données personnelles :</p>
             {politiqueConfidentialite}
             
             {conditionsUtilisation}
@@ -146,7 +145,7 @@ function MentionsLegales() {
             <p style={styles.paragraph}>Tous les éléments du site, y compris les textes, les images, les graphiques, les logos, les vidéos, les éléments interactifs, etc., sont la propriété exclusive de {nom} ou de ses partenaires et sont protégés par les lois internationales sur la propriété intellectuelle.</p>
             
             <h2 style={styles.heading}>Contact :</h2>
-            <p style={styles.paragraph}>Pour toute question concernant les mentions légales, veuillez nous contacter à l&eacute;adresse suivante : {adresseEmail}</p>
+            <p style={styles.paragraph}>Pour toute question concernant les mentions légales, veuillez nous contacter à l&rsquo;;adresse suivante : {adresseEmail}</p>
         </div>
     );
 

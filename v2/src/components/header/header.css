@@ -1,0 +1,42 @@
+/* header.css */
+
+.header {
+    padding: 20px; /* Padding around the header */
+    text-align: center; /* Center the text */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Arrange items in a column */
+    align-items: center; /* Center items horizontally */
+  }
+  
+  .header-title {
+    color: #fff; /* White text color */
+    font-size: 2em; /* Font size for the title */
+    margin: 0; /* Remove default margin */
+  }
+  
+  .header-nav {
+    margin-top: 10px; /* Space above the navigation */
+  }
+  
+  .header-list {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    display: flex; /* Use flexbox for layout */
+    gap: 20px; /* Space between list items */
+  }
+  
+  .header-list li {
+    margin: 0; /* Remove default margin */
+  }
+  
+  .header-link {
+    color: #fff; /* White text color */
+    text-decoration: none; /* Remove underline */
+    font-weight: 500; /* Medium font weight */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+  }
+  
+  .header-link:hover {
+    color: #FFD700; /* Gold color on hover */
+  }  
