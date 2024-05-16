@@ -1,0 +1,44 @@
+#projects {
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .project {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: calc(33.333% - 20px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .project-image {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+  
+  .project-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .project-link:hover {
+    text-decoration: underline;
+  }
+
+  .project {
+    color: black;
+  }
+
+  .projects-subtitle {
+    color: #333;
+  }
