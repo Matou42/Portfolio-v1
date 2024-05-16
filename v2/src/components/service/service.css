@@ -1,0 +1,81 @@
+/* services.css */
+
+.Section.ServicesSection {
+    padding: 50px 20px;
+    background: linear-gradient(120deg, #242424, #242424);
+    text-align: center;
+  }
+  
+  .Container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .Container img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .Container h2 {
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    color: #fff;
+  }
+  
+  .Service {
+    background: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .Service:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .Service h3 {
+    font-size: 1.75rem;
+    color: #007bff;
+    margin-bottom: 10px;
+  }
+  
+  .Service p {
+    font-size: 1.25rem;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  .Service ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  .Service ul li {
+    margin-bottom: 10px;
+    color: #555;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 1rem;
+    margin-top: 20px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+  }  
