@@ -15,7 +15,7 @@ const About = () => {
           labels: ["JavaScript", "HTML/CSS", "React js", "php"],
           datasets: [{
             label: 'Niveau de compétence en pourcentage',
-            data: [70, 85, 40, 35],
+            data: [50, 85, 40, 35],
             backgroundColor: [
               'rgba(255, 99, 132, 0.5)',
               'rgba(54, 162, 235, 0.5)',
