@@ -12,7 +12,6 @@ const Services = () => {
       details: [
         'Développé sous Visual Studio code (Outil d\'éditeur de texte)',
         'Charte graphique à partir d\'une maquette pré-définie',
-        'Domaine + hébergement + e-mail pendant 12 mois',
         'Interface administrateur',
       ],
     },
@@ -22,7 +21,6 @@ const Services = () => {
       details: [
         'Développé SUR-MESURE (Codage à la main)',
         'Création charte graphique personnalisée',
-        'Domaine + hébergement + e-mail pendant 12 mois',
         'Interface administrateur',
       ],
     },
@@ -35,7 +33,6 @@ const Services = () => {
       details: [
         'Développé sous Visual Studio code (Outil d\'éditeur de texte)',
         'Création charte graphique personnalisée',
-        'Domaine + hébergement + e-mail pendant 12 mois',
         'Installation & configuration des plugins choisis',
       ],
     },
