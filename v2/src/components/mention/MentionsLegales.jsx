@@ -54,7 +54,7 @@ function MentionsLegales() {
                     Lorsque vous utilisez ce site, nous pouvons collecter les informations suivantes :
                 </p>
                 <ul style={styles.list}>
-                    <li>Informations d&rsquo;;identification personnelle telles que votre nom, votre adresse e-mail, votre numéro de téléphone, etc.</li>
+                    <li>Informations d&rsquo;identification personnelle telles que votre nom, votre adresse e-mail, votre numéro de téléphone, etc.</li>
                     <li>Informations de connexion, y compris les adresses IP, les données de connexion, le type et la version du navigateur, etc.</li>
                     <li>Informations sur votre utilisation de notre service, telles que les pages visitées, les fonctionnalités utilisées, etc.</li>
                     <li>Informations fournies volontairement par vous, telles que les commentaires, les rétroactions, etc.</li>
