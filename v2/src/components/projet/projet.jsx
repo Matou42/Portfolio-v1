@@ -6,17 +6,17 @@ const Projects = () => {
       title: "Site Portfolio",
       description: "Un site web personnel pour présenter vos compétences, vos projets et votre CV.",
       technologies: ["HTML", "CSS", "JavaScript", "React"],
-      link: "#", // Remplacez "#" par le lien de votre choix quand vous aurez créé votre site
-      image: "https://images.pexels.com/photos/14936128/pexels-photo-14936128.jpeg?cs=srgb&dl=pexels-ann-h-45017-14936128.jpg&fm=jpg" // Assurez-vous d'avoir une image de votre projet dans le répertoire approprié
+      link: "#", // Remplacez "#" par le lien de mon site web
+      image: "https://images.pexels.com/photos/14936128/pexels-photo-14936128.jpeg?cs=srgb&dl=pexels-ann-h-45017-14936128.jpg&fm=jpg" 
     },
     {
       title: "Blog Personnel",
       description: "Un blog où vous partagez vos expériences d'apprentissage, vos projets et vos réflexions sur le développement web.",
       technologies: ["HTML", "CSS", "JavaScript", "React"],
-      link: "#", // Remplacez "#" par le lien de votre choix quand vous aurez créé votre blog
+      link: "#", // Remplacez "#" par le lien de mon site web
       image: "https://sigmacorporation.pro/uploads/img/129.jpeg"
     },
-    // Ajoutez d'autres exemples de projets imaginaires ici
+  
   ];
 
   return (
