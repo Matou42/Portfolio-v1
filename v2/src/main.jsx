@@ -9,14 +9,12 @@ import Projects from './components/projet/projet.jsx';
 import Contact from './components/contact/contact.jsx';
 import Services from './components/service/service.jsx';
 import Mention from './components/mention/MentionsLegales.jsx';
-import Menu from './components/menu/Menu.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
       <App />
       <Header />
       <About />
-      <Menu />
       <Projects />
       <Services />
       <Contact />
