@@ -1,46 +1,8 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState } from 'react';
 import './about.css';
-import Chart from 'chart.js/auto';
 
 const About = () => {
   const [afficherPlus, setAfficherPlus] = useState(false);
-  const chartRef = useRef(null);
-
-  useEffect(() => {
-    if (afficherPlus) {
-      const ctx = chartRef.current.getContext('2d');
-      new Chart(ctx, {
-        type: 'bar',
-        data: {
-          labels: ["JavaScript", "HTML/CSS", "React js", "php"],
-          datasets: [{
-            label: 'Niveau de compétence en pourcentage',
-            data: [50, 85, 40, 35],
-            backgroundColor: [
-              'rgba(255, 99, 132, 0.5)',
-              'rgba(54, 162, 235, 0.5)',
-              'rgba(255, 206, 86, 0.5)',
-              'rgba(75, 192, 192, 0.5)'
-            ],
-            borderColor: [
-              'rgba(255, 99, 132, 1)',
-              'rgba(54, 162, 235, 1)',
-              'rgba(255, 206, 86, 1)',
-              'rgba(75, 192, 192, 1)'
-            ],
-            borderWidth: 1
-          }]
-        },
-        options: {
-          scales: {
-            y: {
-              beginAtZero: true
-            }
-          }
-        }
-      });
-    }
-  }, [afficherPlus, chartRef]);
 
   const toggleAfficherPlus = () => {
     setAfficherPlus(!afficherPlus);
@@ -55,7 +17,38 @@ const About = () => {
       {afficherPlus && (
         <div>
           <h3>Compétences en langages de programmation :</h3>
-          <canvas ref={chartRef} width={200} height={100}></canvas>
+          <div className="card-container">
+            <div className="card">
+              <h4 className="card-title">HTML</h4>
+              <p className="card-description">
+                HTML (HyperText Markup Language) est le langage standard utilisé pour créer des pages web.
+              </p>
+            </div>
+            <div className="card">
+              <h4 className="card-title">CSS</h4>
+              <p className="card-description">
+                CSS (Cascading Style Sheets) est un langage de feuille de style utilisé pour styliser les éléments HTML.
+              </p>
+            </div>
+            <div className="card">
+              <h4 className="card-title">JavaScript</h4>
+              <p className="card-description">
+                JavaScript est un langage de programmation de scripts principalement utilisé pour rendre les pages web interactives.
+              </p>
+            </div>
+            <div className="card">
+              <h4 className="card-title">React.js</h4>
+              <p className="card-description">
+                React.js est une bibliothèque JavaScript utilisée pour la création d&rsquo;interfaces utilisateur.
+              </p>
+            </div>
+            <div className="card">
+              <h4 className="card-title">SCSS</h4>
+              <p className="card-description">
+                SCSS est une extension de syntaxe de CSS qui ajoute des fonctionnalités telles que les variables, les mixins et les boucles.
+              </p>
+            </div>
+          </div>
         </div>
       )}
       <button className="bouton" onClick={toggleAfficherPlus}>
