@@ -2,7 +2,8 @@
   --primary-color: #BB86FC; /* Violet pastel */
   --secondary-color: #FF5733; /* Cyan clair */
   --background-color: #333; /* Noir profond */
-  --text-color: #FFFFFF; /* Blanc */
+  --text-color: #fff; /* Blanc */
+  --hover-color: #FFD700; /* Couleur dorée au survol */
 }
 
 body {
