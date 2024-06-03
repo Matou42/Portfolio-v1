@@ -52,3 +52,18 @@
     line-height: 1.5;
     padding-left: 20px;
 }
+
+.mentions-legales-button {
+    background-color: #FF5733;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-bottom: 1vh;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .mentions-legales-button:hover {
+    background-color: #FF5733;
+  }

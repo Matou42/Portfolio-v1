@@ -151,7 +151,7 @@ function MentionsLegales() {
 
     return (
         <div>
-            <button onClick={toggleMentions}>
+            <button className="mentions-legales-button" onClick={toggleMentions}>
                 {showMentions ? "Masquer les mentions légales" : "Afficher les mentions légales"}
             </button>
             {showMentions && mentionsLegalesContent}
