@@ -53,7 +53,7 @@ body {
 }
 
 .button:hover {
-  background-color: #1E90FF; /* Bleu royal */
+  background-color: #FF5733;
 }
 
 @media (prefers-color-scheme: light) {

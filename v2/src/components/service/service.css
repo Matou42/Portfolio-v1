@@ -43,7 +43,7 @@
   
   .Service h3 {
     font-size: 1.75rem;
-    color: #007bff;
+    color: #FF5733;
     margin-bottom: 10px;
   }
   
@@ -65,7 +65,7 @@
   
   button {
     padding: 10px 20px;
-    background-color: #007bff;
+    background-color: #FF5733;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -76,6 +76,6 @@
   }
   
   button:hover {
-    background-color: #0056b3;
+    background-color: #FF5733;
     transform: translateY(-3px);
   }  
