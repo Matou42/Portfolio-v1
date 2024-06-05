@@ -1,12 +1,13 @@
-import { useState } from 'react';
-import './about.css';
+import { useState } from "react";
+import "./about.css";
+import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaSass } from "react-icons/fa";
 
 const About = () => {
   const [afficherPlus, setAfficherPlus] = useState(false);
 
   const toggleAfficherPlus = () => {
     setAfficherPlus(!afficherPlus);
-  }
+  };
 
   return (
     <section id="about">
@@ -16,34 +17,54 @@ const About = () => {
       </p>
       {afficherPlus && (
         <div>
-          <h3>Compétences en langages de programmation :</h3>
+          <h3>Compétences en développement :</h3>
           <div className="card-container">
             <div className="card">
+              <FaHtml5 className="icon" />
               <h4 className="card-title">HTML</h4>
+              <div className="progress-bar">
+                <div className="progress" style={{ width: '95%' }}>85%</div>
+              </div>
               <p className="card-description">
                 HTML (HyperText Markup Language) est le langage standard utilisé pour créer des pages web.
               </p>
             </div>
             <div className="card">
+              <FaCss3Alt className="icon" />
               <h4 className="card-title">CSS</h4>
+              <div className="progress-bar">
+                <div className="progress" style={{ width: '90%' }}>80%</div>
+              </div>
               <p className="card-description">
                 CSS (Cascading Style Sheets) est un langage de feuille de style utilisé pour styliser les éléments HTML.
               </p>
             </div>
             <div className="card">
+              <FaJs className="icon" />
               <h4 className="card-title">JavaScript</h4>
+              <div className="progress-bar">
+                <div className="progress" style={{ width: '85%' }}>75%</div>
+              </div>
               <p className="card-description">
                 JavaScript est un langage de programmation de scripts principalement utilisé pour rendre les pages web interactives.
               </p>
             </div>
             <div className="card">
+              <FaReact className="icon" />
               <h4 className="card-title">React.js</h4>
+              <div className="progress-bar">
+                <div className="progress" style={{ width: '80%' }}>70%</div>
+              </div>
               <p className="card-description">
                 React.js est une bibliothèque JavaScript utilisée pour la création d&rsquo;interfaces utilisateur.
               </p>
             </div>
             <div className="card">
+              <FaSass className="icon" />
               <h4 className="card-title">SCSS</h4>
+              <div className="progress-bar">
+                <div className="progress" style={{ width: '75%' }}>45%</div>
+              </div>
               <p className="card-description">
                 SCSS est une extension de syntaxe de CSS qui ajoute des fonctionnalités telles que les variables, les mixins et les boucles.
               </p>
@@ -56,6 +77,6 @@ const About = () => {
       </button>
     </section>
   );
-}
+};
 
 export default About;

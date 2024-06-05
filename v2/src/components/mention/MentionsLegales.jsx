@@ -85,21 +85,21 @@ function MentionsLegales() {
             <div style={styles.section}>
                 <h3 style={styles.subHeading}>Sur ce site</h3>
                 <p style={styles.paragraph}>
-                    En accédant à ce site, vous acceptez d&lsquo;être lié par ces Conditions d&rsquo;;Utilisation, toutes les lois et réglementations applicables, et acceptez que vous êtes responsable du respect des lois locales applicables. Si vous n&rsquo;;êtes pas d&rsquo;;accord avec l&rsquo;;une de ces conditions, il vous est interdit d&rsquo;;utiliser ou d&rsquo;;accéder à ce site. Les matériaux contenus dans ce site web sont protégés par les lois applicables en matière de droit d&rsquo;auteur et de marques commerciales.
+                    En accédant à ce site, vous acceptez d&lsquo;être lié par ces Conditions d&rsquo;Utilisation, toutes les lois et réglementations applicables, et acceptez que vous êtes responsable du respect des lois locales applicables. Si vous n&rsquo;êtes pas d&rsquo;;accord avec l&rsquo;une de ces conditions, il vous est interdit d&rsquo;utiliser ou d&rsquo;accéder à ce site. Les matériaux contenus dans ce site web sont protégés par les lois applicables en matière de droit d&rsquo;auteur et de marques commerciales.
                 </p>
             </div>
     
             <div style={styles.section}>
                 <h3 style={styles.subHeading}>Utilisation de la licence</h3>
                 <p style={styles.paragraph}>
-                    Il s&rsquo;;agit de l&rsquo;octroi d&rsquo;;une licence, non d&rsquo;;un transfert de titre, et en vertu de cette licence, vous ne pouvez pas :
+                    Il s&rsquo;agit de l&rsquo;octroi d&rsquo;une licence, non d&rsquo;un transfert de titre, et en vertu de cette licence, vous ne pouvez pas :
                 </p>
                 <ul style={styles.list}>
                     <li>Modifier ou copier les documents.</li>
                     <li>Utiliser les documents à des fins commerciales ou pour toute exposition publique (commerciale ou non commerciale).</li>
-                    <li>Tenter de décompiler ou d&rsquo;;appliquer une rétro-ingénierie sur tout logiciel contenu sur ce site.</li>
+                    <li>Tenter de décompiler ou d&rsquo;appliquer une rétro-ingénierie sur tout logiciel contenu sur ce site.</li>
                     <li>Supprimer les mentions de droits d&rsquo;auteur ou autres mentions de propriété des documents.</li>
-                    <li>Transférer les documents à une autre personne ou &rsquo;;refléter&rsquo;; les documents sur un autre serveur.</li>
+                    <li>Transférer les documents à une autre personne ou &rsquo;refléter&rsquo; les documents sur un autre serveur.</li>
                 </ul>
             </div>
     
@@ -118,7 +118,7 @@ function MentionsLegales() {
             <p style={styles.paragraph}>© {annee} {nom}. Tous droits réservés.</p>
 
             <h2 style={styles.heading}>Politique de confidentialité :</h2>
-            <p style={styles.paragraph}>Informations sur la collecte et l&rsquo;;utilisation des données personnelles :</p>
+            <p style={styles.paragraph}>Informations sur la collecte et l&rsquo;utilisation des données personnelles :</p>
             {politiqueConfidentialite}
             
             {conditionsUtilisation}
@@ -145,7 +145,7 @@ function MentionsLegales() {
             <p style={styles.paragraph}>Tous les éléments du site, y compris les textes, les images, les graphiques, les logos, les vidéos, les éléments interactifs, etc., sont la propriété exclusive de {nom} ou de ses partenaires et sont protégés par les lois internationales sur la propriété intellectuelle.</p>
             
             <h2 style={styles.heading}>Contact :</h2>
-            <p style={styles.paragraph}>Pour toute question concernant les mentions légales, veuillez nous contacter à l&rsquo;;adresse suivante : {adresseEmail}</p>
+            <p style={styles.paragraph}>Pour toute question concernant les mentions légales, veuillez nous contacter à l&rsquo;adresse suivante : {adresseEmail}</p>
         </div>
     );
 

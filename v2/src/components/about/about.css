@@ -1,38 +1,89 @@
+#about {
+  padding: 20px;
+  background-color: #333; /* Ajout d'un fond pour l'ensemble de la section */
+  color: #fff; /* Couleur du texte */
+}
+
+h2 {
+  text-align: center;
+  color: #FF5733;
+}
+
 .card-container {
-  display: flex;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Trois cartes par colonne */
   gap: 20px; /* Espacement entre les cartes */
 }
 
 .card {
-  background-color: var(--background-color);
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(255, 87, 51);
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 16px;
   padding: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  position: relative; /* Pour positionner le pourcentage */
+  overflow: hidden; /* Pour masquer le débordement de la barre de progression */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.icon {
+  font-size: 2.5em;
+  color: #FF5733;
+  display: block;
+  margin: 0 auto;
 }
 
 .card-title {
   font-size: 1.5em;
-  color: var(--primary-color);
+  margin-bottom: 10px;
+  color: #FF5733;
+  text-align: center;
 }
 
 .card-description {
-  color: var(--text-color);
-  line-height: 1.5;
+  font-size: 1em;
+  color: #333; /* Couleur du texte */
+  text-align: justify;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 20px;
+  background-color: #ddd;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.progress {
+  height: 100%;
+  background-color: #FF5733;
+  border-radius: 10px;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  line-height: 20px; /* Pour centrer verticalement le texte */
+  transition: width 0.5s ease; /* Animation de transition */
 }
 
 .bouton {
-  margin-bottom: 1vh;
+  display: block;
+  margin: 20px auto;
   padding: 10px 20px;
-  font-size: 1em;
+  background-color: #FF5733;
+  color: #fff;
   border: none;
   border-radius: 5px;
-  background-color: var(--secondary-color);
-  color: #fff;
   cursor: pointer;
+  font-size: 1em;
   transition: background-color 0.3s ease;
 }
 
 .bouton:hover {
-  background-color: #FF5733; /* Bleu royal */
+  background-color: #e04e2b;
 }
