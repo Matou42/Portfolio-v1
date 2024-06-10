@@ -1,81 +1,105 @@
-/* services.css */
+/* Reset and Base Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #333;
+}
 
-.Section.ServicesSection {
-    padding: 50px 20px;
-    
-    text-align: center;
-  }
+/* Container */
+.Container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Section */
+.ServicesSection {
+  padding: 50px 20px;
+  background: #333;
   
-  .Container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-  }
-  
-  .Container img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .Container h2 {
-    margin-bottom: 40px;
-    font-size: 2.5rem;
-    color: #fff;
-  }
-  
-  .Service {
-    background: #fff;
-    margin-bottom: 20px;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: left;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .Service:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-  }
-  
-  .Service h3 {
-    font-size: 1.75rem;
-    color: #FF5733;
-    margin-bottom: 10px;
-  }
-  
-  .Service p {
-    font-size: 1.25rem;
-    color: #555;
-    margin-bottom: 15px;
-  }
-  
-  .Service ul {
-    list-style-type: disc;
-    padding-left: 20px;
-  }
-  
-  .Service ul li {
-    margin-bottom: 10px;
-    color: #555;
-  }
-  
-  button {
-    padding: 10px 20px;
-    background-color: #FF5733;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    font-size: 1rem;
-    margin-top: 20px;
-  }
-  
-  button:hover {
-    background-color: #FF5733;
-    transform: translateY(-3px);
-  }  
+  border-radius: 10px;
+}
+
+/* Section Title */
+.SectionTitle {
+  text-align: center;
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+/* Service Grid */
+.ServiceGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* Individual Service */
+.Service {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.Service:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.Service h3 {
+  font-size: 1.5em;
+  color: #FF5733;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.Service h3::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #FF5733;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+}
+
+.Service .price {
+  font-size: 1.2em;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.Service ul {
+  padding-left: 20px;
+  list-style: none;
+}
+
+.Service ul li {
+  font-size: 1em;
+  color: #666;
+  line-height: 1.6em;
+  margin-bottom: 8px;
+}
+
+/* Toggle Button */
+.ToggleButton {
+  display: block;
+  margin: 30px auto;
+  padding: 10px 30px;
+  font-size: 1em;
+  color: #fff;
+  background-color: #FF5733;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.ToggleButton:hover {
+  background-color: #FF5733;
+}

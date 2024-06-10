@@ -1,4 +1,3 @@
-// Services.jsx
 import { useState } from 'react';
 import './service.css';
 
@@ -10,7 +9,7 @@ const Services = () => {
       title: 'SITE VITRINE STANDARD',
       price: 'À PARTIR DE 1000€ *',
       details: [
-        'Développé sous Visual Studio code (Outil d\'éditeur de texte)',
+        'Développé sous Visual Studio Code (Outil d\'éditeur de texte)',
         'Charte graphique à partir d\'une maquette pré-définie',
         'Interface administrateur',
       ],
@@ -31,7 +30,7 @@ const Services = () => {
       title: 'PLATEFORME E-COMMERCE',
       price: 'À PARTIR DE 2300€ *',
       details: [
-        'Développé sous Visual Studio code (Outil d\'éditeur de texte)',
+        'Développé sous Visual Studio Code (Outil d\'éditeur de texte)',
         'Création charte graphique personnalisée',
         'Installation & configuration des plugins choisis',
       ],
@@ -60,7 +59,7 @@ const Services = () => {
     return services.map((service, index) => (
       <div key={index} className="Service">
         <h3>{service.title}</h3>
-        <p>{service.price}</p>
+        <p className="price">{service.price}</p>
         <ul>
           {service.details.map((detail, i) => (
             <li key={i}>{detail}</li>
@@ -71,12 +70,14 @@ const Services = () => {
   };
 
   return (
-    <section id="services" className="Section ServicesSection">
+    <section id="services" className="ServicesSection">
       <div className="Container">
-        <h2>Nos Services</h2>
-        {renderServices(initialServices)}
-        {showMore && renderServices(additionalServices)}
-        <button onClick={() => setShowMore(!showMore)}>
+        <h2 className="SectionTitle">Nos Services</h2>
+        <div className="ServiceGrid">
+          {renderServices(initialServices)}
+          {showMore && renderServices(additionalServices)}
+        </div>
+        <button className="ToggleButton" onClick={() => setShowMore(!showMore)}>
           {showMore ? 'Voir moins' : 'Voir plus'}
         </button>
       </div>
