@@ -10,8 +10,8 @@ const Projects = () => {
       image: "https://images.pexels.com/photos/14936128/pexels-photo-14936128.jpeg?cs=srgb&dl=pexels-ann-h-45017-14936128.jpg&fm=jpg" 
     },
     {
-      title: "Forum",
-      description: "Un forum est une plateforme en ligne où des utilisateurs peuvent discuter et échanger des informations sur divers sujets",
+      title: "Blog",
+      description: "Le blog est un journal en ligne qui a vocation à créer du contenu à intervalles réguliers sur des thématiques spécifiques ou généralistes pour une communauté de lecteurs.",
       technologies: ["HTML", "CSS", "JavaScript", "React"],
       link: "#", // Remplacez "#" par le lien de mon site web
       image: "https://sigmacorporation.pro/uploads/img/129.jpeg"
