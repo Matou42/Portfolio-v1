@@ -91,6 +91,7 @@ const Contact = () => {
             {errors.email && <span className="error">{errors.email}</span>}
           </div>
           <div className="form-group">
+          <label htmlFor="email">Message :</label>
             <textarea name="message" value={message} onChange={(e) => setMessage(e.target.value)} placeholder="Votre message" required></textarea>
             {errors.message && <span className="error">{errors.message}</span>}
           </div>

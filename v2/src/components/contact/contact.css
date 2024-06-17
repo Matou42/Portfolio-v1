@@ -98,7 +98,7 @@ body {
 }
 
 .error {
-  color: #ff6f61;
+  color: #333;
   font-size: 14px;
   margin-top: 5px;
 }
@@ -133,7 +133,7 @@ button[type="submit"]:hover {
 }
 
 .message-container.success {
-  border-color: #28a745;
+  border-color: #ff6f61;
 }
 
 .message-container.error {
