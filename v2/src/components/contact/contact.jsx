@@ -18,7 +18,8 @@ const Contact = () => {
 
     emailjs.send("service_vdxlaz7", "template_j3v69mg", {
       reply_to: email,
-      message: message
+      message: message,
+      to_name: name,
     }, 'IbLRh68IWib2ejfnM')
     .then((result) => {
       console.log('Email envoyé avec succès !', result.text);
