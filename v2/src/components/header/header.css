@@ -1,45 +1,90 @@
 /* header.css */
 
 .header {
-  padding: 20px; /* Padding around the header */
-  text-align: center; /* Center the text */
-  display: flex; /* Use flexbox for layout */
-  flex-direction: column; /* Arrange items in a column */
-  align-items: center; /* Center items horizontally */
+  padding: 50px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background: linear-gradient(135deg, #2e2e2e, #1c1c1c); /* Dégradé d'arrière-plan */
+  color: #fff; /* Couleur du texte blanc */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Ombre douce */
+  border-radius: 20px; /* Coins arrondis */
+  overflow: hidden;
+}
+
+.header::before {
+  content: '';
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255, 87, 51, 0.3), rgba(0, 0, 0, 0) 70%);
+  z-index: -1;
+  top: -50%;
+  left: -50%;
+  animation: rotate 10s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .header-title {
-  color: #FF5733; /* Orange text color */
-  font-size: 3em; /* Larger font size for the title */
-  margin: 0; /* Remove default margin */
-  text-transform: uppercase; /* Uppercase text */
-  font-family: "Arial Black", sans-serif; /* Bold font family */
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Text shadow for depth */
+  color: #FF5733; /* Couleur du titre orange */
+  font-size: 3em;
+  margin: 0;
+  text-transform: uppercase;
+  font-family: "Arial Black", sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .header-nav {
-  margin-top: 20px; /* Increased space above the navigation */
+  margin-top: 20px;
 }
 
 .header-list {
-  list-style-type: none; /* Remove bullets */
-  padding: 0; /* Remove padding */
-  margin: 0; /* Remove margin */
-  display: flex; /* Use flexbox for layout */
-  gap: 30px; /* Increased space between list items */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 30px;
 }
 
 .header-list li {
-  margin: 0; /* Remove default margin */
+  margin: 0;
 }
 
 .header-link {
-  color: #FF5733; /* Orange text color */
-  text-decoration: none; /* Remove underline */
-  font-weight: 600; /* Bolder font weight */
-  transition: color 0.3s ease; /* Smooth transition for color change */
+  color: #FF5733; /* Couleur du texte orange */
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease, transform 0.3s ease; /* Transition douce pour changement de couleur et transformation */
+  position: relative;
+}
+
+.header-link::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #FF5733; /* Couleur de l'indicateur orange */
+  left: 0;
+  bottom: -5px;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
 }
 
 .header-link:hover {
-  color: #6F42C1; /* Purple color on hover */
+  color: #FFD700; /* Couleur dorée au survol */
+  transform: translateY(-3px); /* Déplacement vers le haut au survol */
+}
+
+.header-link:hover::after {
+  transform: scaleX(1);
 }

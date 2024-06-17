@@ -9,143 +9,74 @@ function MentionsLegales() {
     const toggleMentions = () => {
         setShowMentions(!showMentions);
     };
-    const styles = {
-        container: {
-            fontFamily: 'Arial, sans-serif',
-            color: '#333',
-            maxWidth: '600px',
-            margin: '0 auto',
-            textAlign: 'center',
-        },
-        heading: {
-            textAlign: 'center',
-            fontSize: '24px',
-            marginBottom: '20px',
-        },
-        section: {
-            marginBottom: '30px',
-            textAlign: 'center',
-        },
-        subHeading: {
-            fontSize: '20px',
-            marginBottom: '10px',
-            textAlign: 'center',
-        },
-        paragraph: {
-            fontSize: '16px',
-            lineHeight: '1.5',
-            textAlign: 'center',
-        },
-        list: {
-            fontSize: '16px',
-            lineHeight: '1.5',
-            paddingLeft: '20px',
-            textAlign: 'center',
-        },
-    };
 
     const politiqueConfidentialite = (
-        
-        <div style={styles.container}>
-            <h2 style={styles.heading}>Politique de Confidentialité</h2>
-            <div style={styles.section}>
-                <h3 style={styles.subHeading}>Informations que nous collectons</h3>
-                <p style={styles.paragraph}>
-                    Lorsque vous utilisez ce site, nous pouvons collecter les informations suivantes :
-                </p>
-                <ul style={styles.list}>
-                    <li>Informations d&rsquo;identification personnelle telles que votre nom, votre adresse e-mail, votre numéro de téléphone, etc.</li>
-                    <li>Informations de connexion, y compris les adresses IP, les données de connexion, le type et la version du navigateur, etc.</li>
-                    <li>Informations sur votre utilisation de notre service, telles que les pages visitées, les fonctionnalités utilisées, etc.</li>
-                    <li>Informations fournies volontairement par vous, telles que les commentaires, les rétroactions, etc.</li>
-                </ul>
-            </div>
-
-            <div style={styles.section}>
-                <h3 style={styles.subHeading}>Utilisation des informations</h3>
-                <p style={styles.paragraph}>
-                    Nous utilisons les informations collectées pour :
-                </p>
-                <ul style={styles.list}>
-                    <li>Fournir, exploiter et maintenir notre service.</li>
-                    <li>Améliorer, personnaliser et développer notre service.</li>
-                    <li>Répondre à vos demandes, questions et préoccupations.</li>
-                    <li>Vous contacter pour des annonces, des mises à jour ou des offres promotionnelles.</li>
-                    <li>Protéger nos droits, notre sécurité et nos biens, ainsi que ceux de nos utilisateurs ou du public, selon la loi applicable.</li>
-                </ul>
-            </div>
-
-            {/* Les autres sections suivent le même modèle */}
+        <div className="mentions-legales-section">
+            <h3 className="mentions-legales-heading">Informations que nous collectons</h3>
+            <p className="mentions-legales-paragraph">
+                Lorsque vous utilisez ce site, nous pouvons collecter les informations suivantes :
+            </p>
+            <ul className="mentions-legales-list">
+                <li>Informations d&apos;identification personnelle telles que votre nom, votre adresse e-mail, votre numéro de téléphone, etc.</li>
+                <li>Informations de connexion, y compris les adresses IP, les données de connexion, le type et la version du navigateur, etc.</li>
+                <li>Informations sur votre utilisation de notre service, telles que les pages visitées, les fonctionnalités utilisées, etc.</li>
+                <li>Informations fournies volontairement par vous, telles que les commentaires, les rétroactions, etc.</li>
+            </ul>
         </div>
     );
 
     const conditionsUtilisation = (
-        <div style={styles.container}>
-            <h2 style={styles.heading}>Conditions d&rsquo;Utilisation</h2>
-            <div style={styles.section}>
-                <h3 style={styles.subHeading}>Sur ce site</h3>
-                <p style={styles.paragraph}>
-                    En accédant à ce site, vous acceptez d&lsquo;être lié par ces Conditions d&rsquo;Utilisation, toutes les lois et réglementations applicables, et acceptez que vous êtes responsable du respect des lois locales applicables. Si vous n&rsquo;êtes pas d&rsquo;;accord avec l&rsquo;une de ces conditions, il vous est interdit d&rsquo;utiliser ou d&rsquo;accéder à ce site. Les matériaux contenus dans ce site web sont protégés par les lois applicables en matière de droit d&rsquo;auteur et de marques commerciales.
-                </p>
-            </div>
-    
-            <div style={styles.section}>
-                <h3 style={styles.subHeading}>Utilisation de la licence</h3>
-                <p style={styles.paragraph}>
-                    Il s&rsquo;agit de l&rsquo;octroi d&rsquo;une licence, non d&rsquo;un transfert de titre, et en vertu de cette licence, vous ne pouvez pas :
-                </p>
-                <ul style={styles.list}>
-                    <li>Modifier ou copier les documents.</li>
-                    <li>Utiliser les documents à des fins commerciales ou pour toute exposition publique (commerciale ou non commerciale).</li>
-                    <li>Tenter de décompiler ou d&rsquo;appliquer une rétro-ingénierie sur tout logiciel contenu sur ce site.</li>
-                    <li>Supprimer les mentions de droits d&rsquo;auteur ou autres mentions de propriété des documents.</li>
-                    <li>Transférer les documents à une autre personne ou &rsquo;refléter&rsquo; les documents sur un autre serveur.</li>
-                </ul>
-            </div>
-    
-            {/* Les autres sections suivent le même modèle */}
+        <div className="mentions-legales-section">
+            <h3 className="mentions-legales-heading">Utilisation des informations</h3>
+            <p className="mentions-legales-paragraph">
+                Nous utilisons les informations collectées pour :
+            </p>
+            <ul className="mentions-legales-list">
+                <li>Fournir, exploiter et maintenir notre service.</li>
+                <li>Améliorer, personnaliser et développer notre service.</li>
+                <li>Répondre à vos demandes, questions et préoccupations.</li>
+                <li>Vous contacter pour des annonces, des mises à jour ou des offres promotionnelles.</li>
+                <li>Protéger nos droits, notre sécurité et nos biens, ainsi que ceux de nos utilisateurs ou du public, selon la loi applicable.</li>
+            </ul>
         </div>
-    );    
-    const adresseEmail = <a href="mailto:contact.maxence2812@gmail.com">contact.maxence2812@gmail.com</a>
-    const nomHebergeur = "Nom de l'hébergeur";
-    const adresseHebergeur = "Adresse de l'hébergeur";
+    );
 
     const mentionsLegalesContent = (
-        <div className="mentions-legales-container" style={styles.container}>
-            <h1 className="mentions-legales-title" style={styles.heading}>Mentions Légales</h1>
+        <div className="mentions-legales-container">
+            <h1 className="mentions-legales-title">Mentions Légales</h1>
 
-            <h2 style={styles.heading}>Droits d&rsquo;auteur :</h2>
-            <p style={styles.paragraph}>© {annee} {nom}. Tous droits réservés.</p>
+            <h2 className="mentions-legales-heading">Droits d&apos;auteur :</h2>
+            <p className="mentions-legales-paragraph">© {annee} {nom}. Tous droits réservés.</p>
 
-            <h2 style={styles.heading}>Politique de confidentialité :</h2>
-            <p style={styles.paragraph}>Informations sur la collecte et l&rsquo;utilisation des données personnelles :</p>
+            <h2 className="mentions-legales-heading">Politique de confidentialité :</h2>
+            <p className="mentions-legales-paragraph">Informations sur la collecte et l&apos;utilisation des données personnelles :</p>
             {politiqueConfidentialite}
             
             {conditionsUtilisation}
 
-            <h2 style={styles.heading}>Mentions légales :</h2>
-            <ul style={styles.list}>
+            <h2 className="mentions-legales-heading">Mentions légales :</h2>
+            <ul className="mentions-legales-list">
                 <li>
                     <strong>Éditeur du site :</strong>
                     <ul>
                         <li>{nom}</li>
-                        <li>{adresseEmail}</li>
+                        <li><a href="mailto:contact.maxence2812@gmail.com">contact.maxence2812@gmail.com</a></li>
                     </ul>
                 </li>
                 <li>
                     <strong>Hébergeur du site :</strong>
                     <ul>
-                        <li>{nomHebergeur}</li>
-                        <li>{adresseHebergeur}</li>
+                        <li>Nom de l&apos;hébergeur</li>
+                        <li>Adresse de l&apos;hébergeur</li>
                     </ul>
                 </li>
             </ul>
 
-            <h2 style={styles.heading}>Propriété intellectuelle :</h2>
-            <p style={styles.paragraph}>Tous les éléments du site, y compris les textes, les images, les graphiques, les logos, les vidéos, les éléments interactifs, etc., sont la propriété exclusive de {nom} ou de ses partenaires et sont protégés par les lois internationales sur la propriété intellectuelle.</p>
+            <h2 className="mentions-legales-heading">Propriété intellectuelle :</h2>
+            <p className="mentions-legales-paragraph">Tous les éléments du site, y compris les textes, les images, les graphiques, les logos, les vidéos, les éléments interactifs, etc., sont la propriété exclusive de {nom} ou de ses partenaires et sont protégés par les lois internationales sur la propriété intellectuelle.</p>
             
-            <h2 style={styles.heading}>Contact :</h2>
-            <p style={styles.paragraph}>Pour toute question concernant les mentions légales, veuillez nous contacter à l&rsquo;adresse suivante : {adresseEmail}</p>
+            <h2 className="mentions-legales-heading">Contact :</h2>
+            <p className="mentions-legales-paragraph">Pour toute question concernant les mentions légales, veuillez nous contacter à l&apos;adresse suivante : <a href="mailto:contact.maxence2812@gmail.com">contact.maxence2812@gmail.com</a></p>
         </div>
     );
 

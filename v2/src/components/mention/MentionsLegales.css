@@ -1,69 +1,64 @@
 /* Style pour les mentions légales */
 .mentions-legales-container {
     font-family: Arial, sans-serif;
-    color: #fff;
-    background-color: rgba(245, 238, 238, 0.8); /* Fond semi-transparent noir */
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    text-align: left; /* Alignement du texte à gauche */
-    border-radius: 10px; /* Coins arrondis */
+    color: #333; /* Couleur principale du texte */
+    background-color: #f9f9f9;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    line-height: 1.6;
 }
 
 .mentions-legales-title {
-    font-size: 24px;
+    font-size: 28px;
+    color: #FF5733;
+    text-align: center;
     margin-bottom: 20px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Effet d'ombre sur le texte */
 }
 
-.mentions-legales-button {
-    padding: 10px 20px;
-    background-color: #fff; /* Bouton blanc sur fond noir */
-    color: #333; /* Texte en noir sur bouton blanc */
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.mentions-legales-button:hover {
-    background-color: #343a40; /* Légère variation de couleur au survol */
-}
-
-.mentions-legales-content {
-    margin-bottom: 30px;
-}
-
-.mentions-legales-section {
-    margin-bottom: 30px;
+.mentions-legales-heading,
+.mentions-legales-paragraph,
+.mentions-legales-list {
+    font-size: 16px;
+    color: #333; /* Couleur principale du texte */
+    text-align: left;
 }
 
 .mentions-legales-heading {
-    font-size: 20px;
     margin-bottom: 10px;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Effet d'ombre sur le texte */
 }
 
 .mentions-legales-paragraph {
-    font-size: 16px;
-    line-height: 1.5;
+    margin-bottom: 10px;
 }
 
 .mentions-legales-list {
-    font-size: 16px;
-    line-height: 1.5;
-    padding-left: 20px;
+    margin-left: 20px;
 }
 
 .mentions-legales-button {
-    background-color: #FF5733;
-    color: white;
-    border: none;
-    padding: 10px 20px;
+    display: inline-block;
+    padding: 12px 24px;
     font-size: 16px;
-    margin-bottom: 1vh;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .mentions-legales-button:hover {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
     background-color: #FF5733;
-  }
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    margin-top: 20px;
+}
+
+.mentions-legales-button:hover {
+    background-color: #e04e2b;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
