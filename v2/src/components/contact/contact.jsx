@@ -23,7 +23,7 @@ const Contact = () => {
     if (emailError) {
       const timer = setTimeout(() => {
         resetForm();
-      }, 10000);
+      }, 30000);
 
       // Cleanup function to clear the timeout if the component is unmounted
       return () => clearTimeout(timer);
@@ -45,7 +45,6 @@ const Contact = () => {
       console.log('Email envoyé avec succès !', result.text);
       setSubmitted(true);
       setEmailError(null);
-      throw new Error('Erreur simulée');
     })
     .catch((error) => {
       console.error('Erreur lors de l\'envoi de l\'email :', error.text);
