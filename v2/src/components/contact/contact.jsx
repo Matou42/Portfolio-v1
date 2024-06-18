@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './contact.css';
 import emailjs from 'emailjs-com';
 
@@ -9,6 +9,26 @@ const Contact = () => {
   const [errors, setErrors] = useState({});
   const [submitted, setSubmitted] = useState(false);
   const [emailError, setEmailError] = useState(null);
+
+  const resetForm = () => {
+    setName('');
+    setEmail('');
+    setMessage('');
+    setErrors({});
+    setSubmitted(false);
+    setEmailError(null);
+  };
+
+  useEffect(() => {
+    if (emailError) {
+      const timer = setTimeout(() => {
+        resetForm();
+      }, 10000);
+
+      // Cleanup function to clear the timeout if the component is unmounted
+      return () => clearTimeout(timer);
+    }
+  }, [emailError]); // The effect runs when emailError changes
 
   const sendEmail = () => {
     console.log('Envoi de l\'email en cours...');
@@ -25,6 +45,7 @@ const Contact = () => {
       console.log('Email envoyé avec succès !', result.text);
       setSubmitted(true);
       setEmailError(null);
+      throw new Error('Erreur simulée');
     })
     .catch((error) => {
       console.error('Erreur lors de l\'envoi de l\'email :', error.text);
@@ -92,8 +113,8 @@ const Contact = () => {
             {errors.email && <span className="error">{errors.email}</span>}
           </div>
           <div className="form-group">
-          <label htmlFor="email">Message :</label>
-            <textarea name="message" value={message} onChange={(e) => setMessage(e.target.value)} placeholder="Votre message" required></textarea>
+            <label htmlFor="message">Message :</label>
+            <textarea name="message" id="message" value={message} onChange={(e) => setMessage(e.target.value)} placeholder="Votre message" required></textarea>
             {errors.message && <span className="error">{errors.message}</span>}
           </div>
           <button type="submit">Envoyer</button>
