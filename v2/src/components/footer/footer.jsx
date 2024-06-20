@@ -20,10 +20,11 @@ const Footer = () => {
           <p>Email: <a href="mailto:contact.maxence2812@gmail.com" className="footer-email">contact.maxence2812@gmail.com</a></p>
         </div>
         <div className="footer-section">
-          <h4>Suivez-nous</h4>
+          <h4>Suivez-moi</h4>
           <div className="social-icons">
-            <a href="https://instagram.com" className="social-icon"><i className="fab fa-instagram"></i></a>
+            <a href="https://www.instagram.com/maxence_tts2812/" className="social-icon"><i className="fab fa-instagram"></i></a>
             <a href="https://linkedin.com" className="social-icon"><i className="fab fa-linkedin"></i></a>
+            <a href="contact.mexence2812@gmail.com" className="social-icon"><i className="fas fa-envelope"></i></a>
           </div>
         </div>
       </div>
