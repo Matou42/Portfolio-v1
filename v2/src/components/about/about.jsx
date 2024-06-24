@@ -23,7 +23,7 @@ const About = () => {
               <FaHtml5 className="icon" />
               <h4 className="card-title">HTML</h4>
               <div className="progress-bar">
-                <div className="progress" style={{ width: '95%' }}>85%</div>
+                <div className="progress" style={{ width: '85%' }}>85%</div>
               </div>
               <p className="card-description">
                 HTML (HyperText Markup Language) est le langage standard utilisé pour créer des pages web.
@@ -33,7 +33,7 @@ const About = () => {
               <FaCss3Alt className="icon" />
               <h4 className="card-title">CSS</h4>
               <div className="progress-bar">
-                <div className="progress" style={{ width: '90%' }}>80%</div>
+                <div className="progress" style={{ width: '90%' }}>90%</div>
               </div>
               <p className="card-description">
                 CSS (Cascading Style Sheets) est un langage de feuille de style utilisé pour styliser les éléments HTML.
@@ -43,7 +43,7 @@ const About = () => {
               <FaJs className="icon" />
               <h4 className="card-title">JavaScript</h4>
               <div className="progress-bar">
-                <div className="progress" style={{ width: '85%' }}>75%</div>
+                <div className="progress" style={{ width: '75%' }}>75%</div>
               </div>
               <p className="card-description">
                 JavaScript est un langage de programmation de scripts principalement utilisé pour rendre les pages web interactives.
@@ -53,7 +53,7 @@ const About = () => {
               <FaReact className="icon" />
               <h4 className="card-title">React.js</h4>
               <div className="progress-bar">
-                <div className="progress" style={{ width: '80%' }}>70%</div>
+                <div className="progress" style={{ width: '70%' }}>70%</div>
               </div>
               <p className="card-description">
                 React.js est une bibliothèque JavaScript utilisée pour la création d&rsquo;interfaces utilisateur.
@@ -63,7 +63,7 @@ const About = () => {
               <FaSass className="icon" />
               <h4 className="card-title">SCSS</h4>
               <div className="progress-bar">
-                <div className="progress" style={{ width: '75%' }}>45%</div>
+                <div className="progress" style={{ width: '45%' }}>45%</div>
               </div>
               <p className="card-description">
                 SCSS est une extension de syntaxe de CSS qui ajoute des fonctionnalités telles que les variables, les mixins et les boucles.
