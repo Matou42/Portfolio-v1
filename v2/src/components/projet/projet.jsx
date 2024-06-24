@@ -1,47 +1,32 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import './projet.css';
 
 const Projects = () => {
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedProject, setSelectedProject] = useState(null);
 
-  useEffect(() => {
-    if (modalOpen) {
-      document.body.classList.add('modal-open');
-    } else {
-      document.body.classList.remove('modal-open');
-    }
-
-    // Clean up the effect on component unmount
-    return () => {
-      document.body.classList.remove('modal-open');
-    };
-  }, [modalOpen]);
-
   const projectList = [
     {
       title: "Site Portfolio",
       description: "Un site web personnel pour présenter vos compétences, vos projets et votre CV.",
       technologies: ["HTML", "CSS", "React JS"],
-      link: "",
-      image: "https://images.pexels.com/photos/14936128/pexels-photo-14936128.jpeg?cs=srgb&dl=pexels-ann-h-45017-14936128.jpg&fm=jpg"
+      link: "https://matou.vercel.app/", // Ajouter le lien si disponible
+      image: "https://images.pexels.com/photos/14936128/pexels-photo-14936128.jpeg?cs=srgb&dl=pexels-ann-h-45017-14936128.jpg&fm=jpg",
+      inProgress: false // Mettre à true si en cours de développement
     },
     {
       title: "Blog",
       description: "Le blog est un journal en ligne qui a vocation à créer du contenu à intervalles réguliers sur des thématiques spécifiques ou généralistes pour une communauté de lecteurs.",
       technologies: ["HTML", "CSS", "React JS"],
-      link: "",
-      image: "https://sigmacorporation.pro/uploads/img/129.jpeg"
+      link: "", // Ajouter le lien si disponible
+      image: "https://sigmacorporation.pro/uploads/img/129.jpeg",
+      inProgress: true // Mettre à true si en cours de développement
     },
   ];
 
   const openModal = (project) => {
-    if (project.link) {
-      window.open(project.link, '_blank', 'noopener,noreferrer');
-    } else {
-      setSelectedProject(project);
-      setModalOpen(true);
-    }
+    setSelectedProject(project);
+    setModalOpen(true);
   };
 
   const closeModal = () => {
@@ -64,14 +49,26 @@ const Projects = () => {
         ))}
       </div>
       {modalOpen && selectedProject && (
-        <div className="modal show">
-          <div className="modal-content show">
+        <div className={`modal ${modalOpen ? 'show' : ''}`}>
+          <div className={`modal-content ${modalOpen ? 'show' : ''}`}>
             <span className="close-button" onClick={closeModal}>&times;</span>
-            <h2>Projet en cours de développement</h2>
-            <p>Ce projet est actuellement en cours de développement. Revenez bientôt pour voir les mises à jour !</p>
-            <p><strong>Titre :</strong> {selectedProject.title}</p>
-            <p><strong>Description :</strong> {selectedProject.description}</p>
-            <p><strong>Technologies utilisées :</strong> {selectedProject.technologies.join(', ')}</p>
+            {selectedProject.inProgress ? (
+              <div>
+                <h2>Projet en cours de développement</h2>
+                <p>Ce projet est actuellement en cours de développement. Revenez bientôt pour voir les mises à jour !</p>
+              </div>
+            ) : (
+              <div>
+                <h2>{selectedProject.title}</h2>
+                <iframe 
+                  src={selectedProject.link} 
+                  title={selectedProject.title} 
+                  width="100%" 
+                  height="500px" 
+                  style={{ border: "none" }} 
+                />
+              </div>
+            )}
           </div>
         </div>
       )}
