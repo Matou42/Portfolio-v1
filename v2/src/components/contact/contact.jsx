@@ -20,22 +20,17 @@ const Contact = () => {
   };
 
   useEffect(() => {
-    if (emailError) {
-      const timer = setTimeout(() => {
+    let timer;
+    if (submitted) {
+      timer = setTimeout(() => {
         resetForm();
-      }, 30000);
-
-      // Cleanup function to clear the timeout if the component is unmounted
-      return () => clearTimeout(timer);
+      }, 10000);
     }
-  }, [emailError]); // The effect runs when emailError changes
+
+    return () => clearTimeout(timer);
+  }, [submitted]);
 
   const sendEmail = () => {
-    console.log('Envoi de l\'email en cours...');
-    console.log('Nom:', name);
-    console.log('Email:', email);
-    console.log('Message:', message);
-
     emailjs.send("service_vdxlaz7", "template_j3v69mg", {
       reply_to: email,
       message: message,
@@ -103,12 +98,12 @@ const Contact = () => {
         <form id="contact-form" onSubmit={handleSubmit}>
           <div className="form-group">
             <label htmlFor="name">Nom :</label>
-            <textarea type="text" id="name" value={name} onChange={(e) => setName(e.target.value)} placeholder="Votre nom" required></textarea>
+            <input type="text" id="name" value={name} onChange={(e) => setName(e.target.value)} placeholder="Votre nom" required />
             {errors.name && <span className="error">{errors.name}</span>}
           </div>
           <div className="form-group">
             <label htmlFor="email">Email :</label>
-            <textarea type="email" id="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Votre mail" required></textarea>
+            <input type="email" id="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Votre mail" required />
             {errors.email && <span className="error">{errors.email}</span>}
           </div>
           <div className="form-group">
