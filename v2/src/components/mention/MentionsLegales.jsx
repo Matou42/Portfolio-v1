@@ -66,8 +66,8 @@ function MentionsLegales() {
                 <li>
                     <strong>Hébergeur du site :</strong>
                     <ul>
-                        <li>Nom de l&apos;hébergeur</li>
-                        <li>Adresse de l&apos;hébergeur</li>
+                        <li>Vercel</li>
+                        <li><a href="https://vercel.com/">https://vercel.com/</a></li>
                     </ul>
                 </li>
             </ul>
