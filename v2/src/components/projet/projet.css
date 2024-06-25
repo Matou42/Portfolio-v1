@@ -3,280 +3,117 @@
 /* Styles pour la section des projets */
 #projects {
   padding: 60px 20px;
-  background: linear-gradient(135deg, #2e2e2e, #1c1c1c);
+  background-color: #333;
   color: #fff;
   text-align: center;
-  position: relative;
-  z-index: 1;
-  overflow: hidden;
-  border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
-#projects::before {
-  content: "";
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: radial-gradient(circle, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0) 70%);
-  z-index: -1;
-  animation: rotate 10s linear infinite;
-}
-
-@keyframes rotate {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+.projects-title {
+  font-size: 2.5em;
+  margin-bottom: 40px;
+  color: #fff;
 }
 
 .projects-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
   justify-content: center;
+  gap: 20px;
 }
 
-.project {
-  background-color: #333;
-  border-radius: 16px;
-  padding: 30px;
-  width: calc(33.333% - 30px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  position: relative;
+.project-card {
+  background-color: #444;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: calc(33.333% - 20px);
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  position: relative;
+  color: #fff;
 }
 
-.project::before {
-  content: "";
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: radial-gradient(circle, rgba(255, 87, 51, 0.3), rgba(0, 0, 0, 0) 70%);
-  z-index: -1;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.project:hover::before {
-  opacity: 1;
-}
-
-.project:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 .project-image {
-  max-width: 100%;
-  border-radius: 12px;
-  transition: transform 0.3s ease, filter 0.3s ease;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
 }
 
-.project:hover .project-image {
-  transform: scale(1.03);
-  filter: brightness(0.9);
-}
-
-.project-details {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
+.project-content {
   padding: 20px;
-  background-color: rgba(0, 0, 0, 0.7);
-  transform: translateY(100%);
-  transition: transform 0.3s ease;
-}
-
-.project:hover .project-details {
-  transform: translateY(0);
+  text-align: left;
 }
 
 .project-title {
-  color: #FF5733;
   font-size: 1.5em;
   margin-bottom: 10px;
+  color: #ff5733;
 }
 
 .project-description {
   color: #ccc;
-  font-size: 1em;
-  line-height: 1.6;
-  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-.project-link {
-  display: inline-block;
-  margin-top: 15px;
-  color: #FF5733;
-  text-decoration: none;
-  font-weight: 600;
-  transition: color 0.3s ease, text-shadow 0.3s ease;
+.project-technologies {
+  margin-bottom: 10px;
+  font-size: 0.9em;
+  color: #999;
 }
 
-.project-link:hover {
-  color: #e04e2b;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.projects-subtitle {
-  color: #ccc;
-  font-size: 1.5em;
-  margin-bottom: 40px;
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
-}
-
-/* Styles pour la modale */
-.modal {
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.3s ease-in-out;
-}
-
-.modal.show {
-  opacity: 1;
-  pointer-events: auto;
-}
-
-.modal-content {
-  background-color: #fff;
-  padding: 30px;
-  border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-  width: 80%;
-  max-width: 600px;
-  text-align: center;
-  transform: scale(0.8);
-  transition: transform 0.3s ease-in-out;
-  z-index: 1;
-}
-
-.modal-content.show {
-  transform: scale(1);
-}
-
-.close-button {
-  color: #aaa;
-  position: absolute;
-  right: 20px;
-  top: 20px;
-  font-size: 24px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: color 0.2s ease;
-}
-
-.close-button:hover,
-.close-button:focus {
-  color: #333;
-}
-
-.modal h2 {
-  font-size: 24px;
-  color: #333;
-  margin-bottom: 15px;
-}
-
-.modal p {
-  font-size: 16px;
-  color: #666;
-  line-height: 1.5;
-}
-
-.project-link {
-  background-color: #ff6f61;
+.view-details-button {
+  background-color: #ff5733;
   color: #fff;
   padding: 10px 20px;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 30px;
+  font-weight: bold;
   transition: background-color 0.3s ease;
   border: none;
   cursor: pointer;
 }
 
-.project-link:focus {
-  outline: none;
-  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+.view-details-button:hover {
+  background-color: #e04e2b;
 }
 
-/* Désactive le défilement du body lorsque la modale est ouverte */
-body.modal-open {
-  overflow: hidden;
+.project-details-hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  transition: opacity 0.3s ease;
+  border-radius: 15px;
 }
 
-/* Styles pour l'iframe */
-iframe {
-  width: 100%;
-  height: 500px;
-  border: none;
-  border-radius: 10px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-  margin-top: 20px;
+.project-card:hover .project-details-hover {
+  opacity: 1;
 }
 
-/* Responsive Design */
 @media (max-width: 1200px) {
-  .project {
-    width: calc(50% - 30px);
+  .project-card {
+    width: calc(50% - 20px);
   }
 }
 
 @media (max-width: 768px) {
-  .project {
-    width: calc(100% - 30px);
-  }
-
-  .modal-content {
-    width: 90%;
-  }
-
-  iframe {
-    height: 400px;
-  }
-}
-
-@media (max-width: 480px) {
-  .projects-subtitle {
-    font-size: 1.2em;
-  }
-
-  .project-title {
-    font-size: 1.2em;
-  }
-
-  .project-description {
-    font-size: 0.9em;
-  }
-
-  .project-link {
-    padding: 8px 16px;
-    font-size: 0.9em;
-  }
-
-  .close-button {
-    font-size: 20px;
-  }
-
-  iframe {
-    height: 300px;
+  .project-card {
+    width: 100%;
   }
 }
