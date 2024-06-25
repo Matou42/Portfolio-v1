@@ -17,7 +17,7 @@ const About = () => {
       </p>
       {afficherPlus && (
         <div>
-          <h3>Compétences et outils de développement en développement :</h3>
+          <h3>Compétences et outils de développement :</h3>
           <div className="card-container">
             <div className="card">
               <FaHtml5 className="icon" />
