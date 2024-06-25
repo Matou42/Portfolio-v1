@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./about.css";
-import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaSass } from "react-icons/fa";
+import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaPhp } from "react-icons/fa";
 
 const About = () => {
   const [afficherPlus, setAfficherPlus] = useState(false);
@@ -60,13 +60,13 @@ const About = () => {
               </p>
             </div>
             <div className="card">
-              <FaSass className="icon" />
-              <h4 className="card-title">SCSS</h4>
+              <FaPhp className="icon" />
+              <h4 className="card-title">PHP</h4>
               <div className="progress-bar">
-                <div className="progress" style={{ width: '45%' }}>45%</div>
+                <div className="progress" style={{ width: '40%' }}>40%</div>
               </div>
               <p className="card-description">
-                SCSS est une extension de syntaxe de CSS qui ajoute des fonctionnalités telles que les variables, les mixins et les boucles.
+              PHP est un langage de script côté serveur utilisé principalement pour le développement web et la création de pages web dynamiques.
               </p>
             </div>
           </div>
