@@ -7,7 +7,7 @@ const Services = () => {
   const initialServices = [
     {
       title: 'SITE VITRINE STANDARD',
-      price: 'À PARTIR DE 1000€ *',
+      price: 'À PARTIR DE 500€ *',
       details: [
         'Développé sous Visual Studio Code (Outil d\'éditeur de texte)',
         'Charte graphique à partir d\'une maquette pré-définie',
@@ -16,7 +16,7 @@ const Services = () => {
     },
     {
       title: 'SITE VITRINE PERSONNALISÉ',
-      price: 'À PARTIR DE 1500€ *',
+      price: 'À PARTIR DE 750€ *',
       details: [
         'Développé SUR-MESURE (Codage à la main)',
         'Création charte graphique personnalisée',
@@ -25,7 +25,7 @@ const Services = () => {
     },
     {
       title: 'PLATEFORME E-COMMERCE',
-      price: 'À PARTIR DE 2300€ *',
+      price: 'À PARTIR DE 1 150€ *',
       details: [
         'Développé sous Visual Studio Code (Outil d\'éditeur de texte)',
         'Création charte graphique personnalisée',
@@ -37,7 +37,7 @@ const Services = () => {
   const additionalServices = [
     {
       title: 'FORFAIT MAINTENANCE',
-      price: '50€/HEURE ** OU 200€/AN ***',
+      price: '15€/HEURE ** OU 200€/AN ***',
       details: [
         'Mises à jour site internet & plugins',
         'Petites modifications graphiques ou de contenu',
@@ -47,7 +47,7 @@ const Services = () => {
     },
     {
       title: 'DÉVELOPPEMENTS SPÉCIFIQUES',
-      price: 'TAUX JOURNALIER MOYEN 200€/JOUR',
+      price: 'TAUX JOURNALIER MOYEN 100€/JOUR',
       details: [
         'L\'ensemble des tarifs indiqués sont H.T.',
         '* Prix à titre informatif : Changement possible selon les demandes et les choix du client.',
