@@ -62,3 +62,20 @@
     transform: translateY(-2px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .mentions-legales-container {
+        padding: 20px;
+    }
+
+    .mentions-legales-title {
+        font-size: 24px;
+    }
+
+    .mentions-legales-heading,
+    .mentions-legales-paragraph,
+    .mentions-legales-list {
+        font-size: 14px;
+    }
+}

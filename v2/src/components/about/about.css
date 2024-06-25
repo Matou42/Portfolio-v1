@@ -1,5 +1,3 @@
-/* about.css */
-
 #about {
   padding: 50px 20px;
   background: linear-gradient(135deg, #2e2e2e, #1c1c1c); /* Dégradé d'arrière-plan */
@@ -133,4 +131,36 @@ p {
   background-color: #e04e2b;
   transform: translateY(-2px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+  #about {
+    padding: 30px 10px;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  p {
+    font-size: 1em;
+    line-height: 1.6;
+  }
+
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    padding: 15px;
+  }
+
+  .icon {
+    font-size: 2em;
+  }
+
+  .card-title {
+    font-size: 1.3em;
+  }
 }
