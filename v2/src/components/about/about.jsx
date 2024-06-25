@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./about.css";
-import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaPhp } from "react-icons/fa";
+import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaPhp, FaCode } from "react-icons/fa";
 
 const About = () => {
   const [afficherPlus, setAfficherPlus] = useState(false);
@@ -17,7 +17,7 @@ const About = () => {
       </p>
       {afficherPlus && (
         <div>
-          <h3>Compétences en développement :</h3>
+          <h3>Compétences et outils de développement en développement :</h3>
           <div className="card-container">
             <div className="card">
               <FaHtml5 className="icon" />
@@ -67,6 +67,13 @@ const About = () => {
               </div>
               <p className="card-description">
               PHP est un langage de script côté serveur utilisé principalement pour le développement web et la création de pages web dynamiques.
+              </p>
+            </div>
+            <div className="card">
+              <FaCode className="icon" />
+              <h4 className="card-title">Visual Studio Code</h4>
+              <p className="card-description">
+              VSC (Visual Studio Code) est un éditeur de code source développé par Microsoft, reconnu pour sa légèreté, sa vitesse, et ses fonctionnalités étendues grâce à des extensions.
               </p>
             </div>
           </div>
