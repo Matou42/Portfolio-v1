@@ -23,7 +23,7 @@ const Footer = () => {
           <h4>Suivez-moi</h4>
           <div className="social-icons">
             <a href="https://www.instagram.com/maxence_tts2812/" className="social-icon"><i className="fab fa-instagram"></i></a>
-            <a href="https://linkedin.com" className="social-icon"><i className="fab fa-linkedin"></i></a>
+            <a href="https://www.linkedin.com/in/maxence-tissot-4484b82b8/" className="social-icon"><i className="fab fa-linkedin"></i></a>
             <a href="contact.mexence2812@gmail.com" className="social-icon"><i className="fas fa-envelope"></i></a>
           </div>
         </div>

@@ -23,9 +23,6 @@ const Services = () => {
         'Interface administrateur',
       ],
     },
-  ];
-
-  const additionalServices = [
     {
       title: 'PLATEFORME E-COMMERCE',
       price: 'À PARTIR DE 2300€ *',
@@ -35,6 +32,9 @@ const Services = () => {
         'Installation & configuration des plugins choisis',
       ],
     },
+  ];
+
+  const additionalServices = [
     {
       title: 'FORFAIT MAINTENANCE',
       price: '50€/HEURE ** OU 200€/AN ***',
@@ -58,7 +58,7 @@ const Services = () => {
   const renderServices = (services) => {
     return services.map((service, index) => (
       <div key={index} className="Service">
-        <h3>{service.title}</h3>
+        <h3 className="ServiceTitle">{service.title}</h3>
         <p className="price">{service.price}</p>
         <ul>
           {service.details.map((detail, i) => (
