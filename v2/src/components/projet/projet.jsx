@@ -12,9 +12,9 @@ const Projects = () => {
       inProgress: false
     },
     {
-      title: "Blog",
-      description: "Le blog est un journal en ligne qui a vocation à créer du contenu à intervalles réguliers sur des thématiques spécifiques ou généralistes pour une communauté de lecteurs.",
-      technologies: ["HTML", "CSS", "React JS"],
+      title: "Système de gestion financier personnel",
+      description: "Un logiciel de finance personnelle est un outil informatique qui aide à suivre et à gérer les finances individuelles, en permettant l'organisation des revenus, des dépenses et des investissements.",
+      technologies: ["HTML", "CSS", "React JS", "MySql", "Node JS"],
       link: "",
       image: "https://sigmacorporation.pro/uploads/img/129.jpeg",
       inProgress: true
