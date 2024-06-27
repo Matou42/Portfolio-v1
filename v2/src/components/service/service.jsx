@@ -11,6 +11,8 @@ const Services = () => {
       details: [
         'Développé sous Visual Studio Code (Outil d\'éditeur de texte)',
         'Charte graphique à partir d\'une maquette pré-définie',
+        'Formulaire de contact',
+        'Site responsive',
       ],
     },
     {
@@ -19,7 +21,9 @@ const Services = () => {
       details: [
         'Développé SUR-MESURE (Codage à la main)',
         'Création charte graphique personnalisée',
+        'Formulaire de contact',
         'Interface administrateur',
+        'Site responsive',
       ],
     },
     {
@@ -29,6 +33,8 @@ const Services = () => {
         'Développé sous Visual Studio Code (Outil d\'éditeur de texte)',
         'Création charte graphique personnalisée',
         'Installation & configuration des plugins choisis',
+        'Formulaire de contact',
+        'Site responsive',
       ],
     },
   ];
