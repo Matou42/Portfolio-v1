@@ -59,16 +59,19 @@ p {
   background-color: #222;
   border: none;
   border-radius: 16px;
-  padding: 20px;
+  padding: 10px; /* Réduit le padding pour diminuer l'espace intérieur */
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   overflow: hidden;
   position: relative;
+  width: 100%; /* Largeur à 100% pour occuper l'espace disponible */
+  max-width: 300px; /* Largeur maximale pour contrôler la taille maximale des cartes */
+  margin: 0 auto; /* Centre les cartes horizontalement */
 }
 
 .card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+  transform: translateY(-5px); /* Légère élévation au survol */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4); /* Ombre plus prononcée au survol */
 }
 
 .icon {

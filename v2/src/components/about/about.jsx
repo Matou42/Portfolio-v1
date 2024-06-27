@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./about.css";
-import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaPhp, FaCode } from "react-icons/fa";
+import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaPhp, FaCode, FaNodeJs, FaDatabase  } from "react-icons/fa";
 
 const About = () => {
   const [afficherPlus, setAfficherPlus] = useState(false);
@@ -70,12 +70,29 @@ const About = () => {
               </p>
             </div>
             <div className="card">
+              <FaNodeJs className="icon" />
+              <h4 className="card-title">Node JS</h4>
+              <div className="progress-bar">
+                <div className="progress" style={{ width: '45%' }}>45%</div>
+              </div>
+              <p className="card-description">
+              Node.js est une plateforme logicielle permettant d&apos;exécuter du code JavaScript côté serveur, ce qui permet de créer des applications web rapides et évolutives.
+              </p>
+            </div>
+            <div className="card">
               <FaCode className="icon" />
               <h4 className="card-title">Visual Studio Code</h4>
               <p className="card-description">
               VSC (Visual Studio Code) est un éditeur de code source développé par Microsoft, reconnu pour sa légèreté, sa vitesse, et ses fonctionnalités étendues grâce à des extensions.
               </p>
             </div>
+            <div className="card">
+             <FaDatabase className="icon" />
+              <h4 className="card-title">MySQL</h4>
+              <p className="card-description">
+              MySQL est un système de gestion de base de données relationnelle (SGBDR) très populaire, largement utilisé dans le développement web et d&apos;autres applications nécessitant le stockage et la gestion efficace de données.
+              </p>
+          </div>
           </div>
         </div>
       )}
