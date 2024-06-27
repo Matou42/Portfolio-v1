@@ -16,7 +16,7 @@ const Projects = () => {
       description: "Un logiciel de finance personnelle est un outil informatique qui aide à suivre et à gérer les finances individuelles, en permettant l'organisation des revenus, des dépenses et des investissements.",
       technologies: ["HTML", "CSS", "React JS", "MySql", "Node JS"],
       link: "",
-      image: "https://sigmacorporation.pro/uploads/img/129.jpeg",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJqa5nzvg8pUT-biQKfv0QuA5OYKdoTsNA0Q&s",
       inProgress: true
     },
   ];
