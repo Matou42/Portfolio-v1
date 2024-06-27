@@ -11,7 +11,6 @@ const Services = () => {
       details: [
         'Développé sous Visual Studio Code (Outil d\'éditeur de texte)',
         'Charte graphique à partir d\'une maquette pré-définie',
-        'Interface administrateur',
       ],
     },
     {
