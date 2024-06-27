@@ -1,0 +1,21 @@
+/* ScrollProgressHorizontal.css */
+
+/* Conteneur de la barre de progression */
+.scroll-horizontal-container {
+    position: fixed;
+    top: 0; /* Positionnée en haut de l'écran */
+    left: 0;
+    width: 100%; /* Prend toute la largeur de la page */
+    height: 10px; /* Hauteur de la barre */
+    background-color: #e0e0e0; /* Couleur de fond de la barre */
+    z-index: 1000; /* Assurez-vous qu'elle est au-dessus des autres éléments */
+  }
+  
+  /* Indicateur de progression */
+  .scroll-horizontal-indicator {
+    height: 100%; /* La barre de progression doit remplir la hauteur du conteneur */
+    background-color: #FF5733; /* Couleur de la barre de progression */
+    transition: width 0.2s ease-out; /* Transition pour un effet plus fluide */
+    border-radius: 5px 5px 0 0; /* Coins arrondis en haut */
+  }
+  
