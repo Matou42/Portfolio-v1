@@ -1,3 +1,4 @@
+/* Styles de base */
 body {
   margin: 0;
   padding: 0;
@@ -9,7 +10,6 @@ body {
 .ServicesSection {
   padding: 50px 20px;
   background: linear-gradient(135deg, #2e2e2e, #1c1c1c); /* Dégradé d'arrière-plan */
-  color: #fff;
   text-align: center;
   position: relative;
   z-index: 1;
@@ -61,7 +61,6 @@ body {
 
 .Service {
   background-color: #222;
-  border: none;
   border-radius: 16px;
   padding: 20px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
@@ -100,6 +99,7 @@ body {
   font-size: 1.5em;
   color: #FF5733; /* Couleur du titre */
   margin-bottom: 10px;
+  font-weight: bold; /* Ajout de poids au texte */
 }
 
 .ServiceDescription {
@@ -128,7 +128,7 @@ body {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Ombre plus prononcée au survol */
 }
 
-/* Responsive Adjustments */
+/* Ajustements responsifs */
 @media screen and (max-width: 768px) {
   .SectionTitle {
     font-size: 2em; /* Réduit la taille du titre sur les petits écrans */
