@@ -12,8 +12,8 @@ const Projects = () => {
       inProgress: false
     },
     {
-      title: "Système de gestion financier personnel",
-      description: "Un logiciel de finance personnelle est un outil informatique qui aide à suivre et à gérer les finances individuelles, en permettant l'organisation des revenus, des dépenses et des investissements.",
+      title: "Système de gestion financier",
+      description: "Un logiciel de finance  est un outil informatique qui aide à suivre et à gérer les finances individuelles, en permettant l'organisation des revenus, des dépenses et des investissements.",
       technologies: ["HTML", "CSS", "React JS", "MySql", "Node JS"],
       link: "",
       image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJqa5nzvg8pUT-biQKfv0QuA5OYKdoTsNA0Q&s",
